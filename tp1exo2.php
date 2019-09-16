@@ -1,5 +1,5 @@
 <?php
-include "index.php";
+include "tp1.php";
 start_page("calcul");
 $op1 = $_GET['op1'];
 $op2 = $_GET['op2'];
