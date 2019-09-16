@@ -13,6 +13,14 @@ elseif('+'== $action)
 {
     $res = $op1 + $op2;
 }
+elseif('/'== $action)
+{
+    $res = $op1 / $op2;
+}
+elseif('-'== $action)
+{
+    $res = $op1 - $op2;
+}
 else
 {
     echo'<br/><strong>opérateur'.$action.'nongéré</strong>';
