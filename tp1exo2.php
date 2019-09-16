@@ -12,7 +12,6 @@ function end_page($title)
 lang="fr"><head><title>' . PHP_EOL . $title . '</title></head><body>' . PHP_EOL;
 }
 
-;
 
 start_page('test');
 ?>
