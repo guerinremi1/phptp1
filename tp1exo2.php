@@ -1,21 +1,22 @@
 <?php
-//dazdazd//
-include 'index.php';
-start_page("calculatrice");
-$operateurs = '*+-/';
-echo '
-    <form action = "calcul.php" method = "get">
-    <input type = "text" name = "op1" ><br>
-    <input type = "text" name = "op2" ><br>';
-for($cpt=0;$cpt<=3;++$cpt)
+include "index.php";
+start_page("calcul");
+$op1 = $_GET['op1'];
+$op2 = $_GET['op2'];
+$action = $_GET['action'];
+echo $action;
+if('*'== $action)
 {
-    echo '<input ';
-    if($cpt==0)
-    {
-        echo'checked = "checked"';
-    }
-    echo'type="submit" name="action" value="'.$operateurs[$cpt].'"/>'.$operateurs[$cpt].'<br/>
-        '."\n";}
-echo '</form>';
+    $res = $op1 * $op2;
+}
+elseif('+'== $action)
+{
+    $res = $op1 + $op2;
+}
+else
+{
+    echo'<br/><strong>opérateur'.$action.'nongéré</strong>';
+}
+if (isset($res)) echo $op1. $action . $op2 . '=' . $res;
 end_page();
 ?>
