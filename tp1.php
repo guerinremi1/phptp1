@@ -10,7 +10,6 @@ $var2 = 1.3;
 $var3 = 'Variable 3';
 echo "$var1 + $var2";
 echo $var1 + $var2;
-echo $var1 + $var3;
 ?>
 </body>
 </head>
