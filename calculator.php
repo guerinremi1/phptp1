@@ -1,6 +1,6 @@
 <?php
 //dazdazd//
-include 'index.php';
+include 'tp1.php';
 start_page("calculatrice");
 $operateurs = '*+-/';
 echo '
